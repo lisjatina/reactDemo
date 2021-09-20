@@ -12,6 +12,13 @@ class Dashboard extends Component {
     }
 
     render() {
+
+        const projectObject ={
+            projectName: "ProjectName from PROPS",
+            projectIdentifier: "Props",
+            description: "Description from PROPS"
+        };
+
         return (
             <div className="projects">
             <div className="container">
@@ -22,7 +29,7 @@ class Dashboard extends Component {
                         <CreateButton/>
                         <br />
                         <hr />
-                        <ProjectItem/>
+                        <ProjectItem project={projectObject}/>
    
                     </div>
                 </div>
